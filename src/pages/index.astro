@@ -42,94 +42,28 @@ const work = await Promise.all(
           TL;DR - Bublr is going down for a couple of weeks, userdata such as profiles and blogs will be completey erased by January of 2025.
           </p>
           <p class="animate">
-            Bublr will be going through a lot of restructering, especially in it's codebase. We realized there were many 
-            problems, some of which we couldn't easily solve and would cause a huge inconvience if continued.
-
-            While this si
+            Bublr will be going through a lot of restructering and during this time, will be offline. This wasn't a very easy 
+            decision to take but there were many technical and legal problems that just couldn't be easily solved. We tried everything
+            to avoid this outcome but unfortunatly, we have no choice but to pull the plug until we come back, stronger and better.
           </p>
           <p class="animate">
-            Visit
-            <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
-              Astro Nano on Github
-            </Link>
-            to fork the repository, read the docs or one-click deploy on Vercel or Netlify. 
+            During this time, we will be looking to raise funds and build a great team that can support us in this journey. While we cannot say how long this may take or what the outcome would be,
+            but we give a word: we will not back down until we can make the greatest comeback in the history of comebacks. 
+          </p>
+          <p class="animate">
+            To all who used our platform, we thank you from the bottom of our team, bublr isn't what it is w/o it's community and we dearly appreciate you all!
           </p>
         </article>
       </section>
 
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Latest posts
-          </h5>
-          <Link href="/blog">
-            See all posts
-          </Link>
-        </div>
-        <ul class="flex flex-col gap-4">
-          {blog.map(post => (
-            <li>
-              <ArrowCard entry={post} />
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Work Experience
-          </h5>
-          <Link href="/work">
-            See all work
-          </Link>
-        </div>
-        <ul class="flex flex-col space-y-4">
-          {work.map(entry => (
-            <li>
-              <div class="text-sm opacity-75">
-                {dateRange(entry.data.dateStart, entry.data.dateEnd)}
-              </div>
-              <div class="font-semibold text-black dark:text-white">
-                {entry.data.company}
-              </div>
-              <div class="text-sm opacity-75">
-                {entry.data.role}
-              </div>
-              <article>
-                <entry.Content />
-              </article>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Recent projects
-          </h5>
-          <Link href="/projects">
-            See all projects
-          </Link>
-        </div>
-        <ul class="flex flex-col gap-4">
-          {projects.map(project => (
-            <li>
-              <ArrowCard entry={project} />
-            </li>
-          ))}
-        </ul>
-      </section>
 
       <section class="animate space-y-4">
         <h5 class="font-semibold text-black dark:text-white">
-          Let's Connect
+          Data Migration / Investors
         </h5>
         <article>
           <p>
-            If you want to get in touch with me about something or just to say hi,
-            reach out on social media or send me an email.
+            If you want your blog posts back, please email me [at] solomon@bublr.life. If you're an investor interested in helping us out, please contact us at the same email.
           </p>
         </article>
         <ul class="flex flex-wrap gap-2">
