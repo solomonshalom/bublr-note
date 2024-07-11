@@ -13,8 +13,8 @@ export const HOME: Metadata = {
   DESCRIPTION: "Just your home in the internet.",
 };
 
-export const BLOG: Metadata = {
-  TITLE: "Blog",
+export const UPDATE: Metadata = {
+  TITLE: "Updates",
   DESCRIPTION: "Bublr's Updates"
 };
 

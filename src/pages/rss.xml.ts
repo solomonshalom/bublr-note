@@ -7,10 +7,10 @@ type Context = {
 }
 
 export async function GET(context: Context) {
-  const blog = (await getCollection("blog"))
+  const update = (await getCollection("update"))
   .filter(post => !post.data.draft);
 
-  const items = [...blog]
+  const items = [...update]
     .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf());
 
   return rss({

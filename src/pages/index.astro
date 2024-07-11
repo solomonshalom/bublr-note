@@ -7,7 +7,7 @@ import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
 
-const blog = (await getCollection("blog"))
+const update = (await getCollection("update"))
   .filter(post => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
@@ -50,7 +50,7 @@ const blog = (await getCollection("blog"))
         </h5>
         <article>
           <p>
-            If you want your blog posts back, please email me [at] solomon@bublr.life. If you're an investor interested in helping us out, please contact us at the same email.
+            If you want your update posts back, please email me [at] solomon@bublr.life. If you're an investor interested in helping us out, please contact us at the same email.
           </p>
         </article>
         <ul class="flex flex-wrap gap-2">
